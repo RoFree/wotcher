@@ -27,7 +27,7 @@ ml5.imageClassifier('MobileNet', video)
 const loop = (classifier) => {
   classifier.classify()
     .then(results => {
-    if (results[0].confidence.toFixed(4); > 1){
+    if (results[0].confidence.toFixed(4) > 1){
       result.innerText = results[0].label;
       probability.innerText = results[0].confidence.toFixed(4);
     }
